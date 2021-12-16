@@ -1,15 +1,18 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Work+Sans:wght@200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600&display=swap');
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
   background-color: #040404;
   color: #fff;
   position: relative;
   background: transparent;
+  
 }
+
+
 body::before {
   content: "";
   position: fixed;
@@ -38,7 +41,7 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -61,8 +64,8 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
   line-height: 1;
-  font-weight: 400;
-  font-family: 'Merriweather', serif;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
 
 }
 
@@ -130,7 +133,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   top: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.8);
 }
 #header.header-top .social-links, #header.header-top h2 {
   display: none;
@@ -183,7 +186,7 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   justify-content: space-between;
   padding: 0;
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.7);
@@ -246,7 +249,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.8);
   transition: 0.3s;
   z-index: 999;
   margin-top: 0;
@@ -291,6 +294,7 @@ section {
   opacity: 0;
   transition: ease-in-out 0.4s;
   z-index: 2;
+  font-weight: lighter;
 }
 section.section-show {
   top: 100px;
@@ -320,7 +324,7 @@ section .container {
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #aaaaaa;
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 .section-title h2::after {
   content: "";
@@ -334,79 +338,21 @@ section .container {
   margin: 0;
   margin: -15px 0 15px 0;
   font-size: 36px;
-  font-weight: 700;
+  font-weight: 500;
   text-transform: uppercase;
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #fff;
 }
 
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
-.about-me .content h3 {
-  font-weight: 700;
-  font-size: 26px;
-  color: #16bebc;
-}
-.about-me .content ul {
-  list-style: none;
-  padding: 0;
-}
-.about-me .content ul li {
-  margin-bottom: 20px;
-  display: flex;
-  align-items: center;
-}
-.about-me .content ul strong {
-  margin-right: 10px;
-}
-.about-me .content ul i {
-  font-size: 16px;
-  margin-right: 5px;
-  color: #16bebc;
-  line-height: 0;
-}
+
+
 .about-me .content p:last-child {
   margin-bottom: 0;
 }
 
-/*--------------------------------------------------------------
-# Counts
---------------------------------------------------------------*/
-.counts {
-  padding: 70px 0 60px;
-}
-.counts .count-box {
-  padding: 30px 30px 25px 30px;
-  width: 100%;
-  position: relative;
-  text-align: center;
-  background: rgba(255, 255, 255, 0.08);
-}
-.counts .count-box i {
-  position: absolute;
-  top: -25px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 24px;
-  background: rgba(255, 255, 255, 0.1);
-  padding: 12px;
-  color: #16bebc;
-  border-radius: 50px;
-  line-height: 0;
-}
-.counts .count-box span {
-  font-size: 36px;
-  display: block;
-  font-weight: 600;
-  color: #fff;
-}
-.counts .count-box p {
-  padding: 0;
-  margin: 0;
-  font-family: "Raleway", sans-serif;
-  font-size: 14px;
-}
 
 /*--------------------------------------------------------------
 # Skills
@@ -422,8 +368,8 @@ section .container {
   margin: 0;
   text-transform: uppercase;
   display: block;
-  font-weight: 600;
-  font-family: 'Work Sans', sans-serif;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
   color: #fff;
 }
 .skills .progress .skill .val {
@@ -456,7 +402,7 @@ section .container {
   line-height: 1;
 }
 .interests .icon-box h3 {
-  font-weight: 700;
+  font-weight: 500;
   margin: 0;
   padding: 0;
   line-height: 1;
@@ -474,7 +420,7 @@ section .container {
 --------------------------------------------------------------*/
 .resume .resume-title {
   font-size: 26px;
-  font-weight: 700;
+  font-weight: 400;
   margin-top: 20px;
   margin-bottom: 20px;
   color: #fff;
@@ -488,9 +434,9 @@ section .container {
 .resume .resume-item h4 {
   line-height: 18px;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 400;
   text-transform: uppercase;
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #16bebc;
   margin-bottom: 10px;
 }
@@ -499,7 +445,7 @@ section .container {
   background: rgba(255, 255, 255, 0.15);
   padding: 5px 15px;
   display: inline-block;
-  font-weight: 600;
+  font-weight: 400;
   margin-bottom: 10px;
 }
 .resume .resume-item ul {
@@ -539,7 +485,7 @@ section .container {
 }
 .portfolio .portfolio-wrap::before {
   content: "";
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.7);
   position: absolute;
   left: 30px;
   right: 30px;
@@ -575,7 +521,7 @@ section .container {
 
 .portfolio .portfolio-wrap .portfolio-info button {
   transition: 1.0s;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .portfolio .portfolio-wrap:hover::before {
@@ -617,7 +563,7 @@ section .container {
 }
 .portfolio-details .portfolio-title {
   font-size: 26px;
-  font-weight: 700;
+  font-weight: 400;
   margin-bottom: 20px;
 }
 .portfolio-details .portfolio-info {
@@ -679,7 +625,7 @@ section .container {
 .contact .info-box h3 {
   font-size: 20px;
   color: rgba(255, 255, 255, 0.5);
-  font-weight: 700;
+  font-weight: 400;
   margin: 10px 0 8px 68px;
 }
 .contact .info-box p {
@@ -736,20 +682,6 @@ section .container {
   font-size: 13px;
   color: #fff;
   z-index: 999999;
-}
-@media (max-width: 992px) {
-  .credits {
-    text-align: center;
-    padding: 10px;
-    background: rgba(0, 0, 0, 0.6);
-  }
-}
-.credits a {
-  color: #16bebc;
-  transition: 0.3s;
-}
-.credits a:hover {
-  color: #fff;
 }
 
 
