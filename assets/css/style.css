@@ -36,7 +36,7 @@ a {
 }
 
 a:hover {
-  color: #35e888;
+  color: #16bebc;
   text-decoration: none;
 }
 
@@ -303,7 +303,7 @@ section.section-show {
   padding-bottom: 45px;
 }
 section .container {
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.5);
   padding: 30px;
 }
 @media (max-width: 768px) {
